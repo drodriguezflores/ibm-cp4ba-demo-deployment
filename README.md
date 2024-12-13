@@ -4,7 +4,7 @@ This document contains quick notes created during installation of IBM Cloud Pak 
 
 These notes have been created using official installation documentation hanging at https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/24.0.1?topic=installing-starter-deployments. The sections highlighted in red in the screenshot below show the specific sections these notes are based on. There is no major difference. It is just a consolidated, linearized, one-page description of the installation using Operator Hub, complemented with additional comments.
 
-![IBM Docs - Used sections](images/ibm-docs-sections.png)
+![IBM Docs - Used sections](images/cp4ba2401-ibm-docs-sections.png)
 
 Two additional methods are available in the documentation - _admin script_ and _silent mode_ (still with manual selection of capabilities) / _deployment script_. They represent valid, partially more automated alternatives. The deployment itself is at the end just piece of yaml. You can experiment on your own.
 ## Disclaimer
