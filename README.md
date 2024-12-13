@@ -11,10 +11,6 @@ Two additional methods are available in the documentation - _admin script_ and _
 This is not an official IBM documentation. Absolutely no warranties, no responsibility for anything. Use it on your own risk and always follow the official IBM documents.
 
 Please do not hesitate to create an issue here if needed. Your feedback is appreciated.
-## OpenShift clusters used for the installation
-Two types of OpenShift clusters have been tested, both version 4.7.x (BTW it seems there are some issues on V4.8 with DB2, not confirmed):
-- ROKS - RedHat OpenShift Kubernetes Service allowing to run managed Red Hat OpenShift on IBM Cloud
-- "Home-made" OpenShift cluster created from scratch on top of RHEL and CoreOS virtual machines
 
 > The installation should behave the same on managed OpenShift clusters like [ROSA (Red Hat OpenShift Service on AWS)](https://aws.amazon.com/rosa/) and [Azure Red Hat OpenShift](https://azure.microsoft.com/services/openshift). Detailed testing is being in progress, with positive results so far. The only major difference actually seems to be in storage classes used for persistent volume claims which provide file systems to store data. The storage classes are always specific for particular environment and vendor. The right selection of storage classes must be performed during the installation.
 ## Pre-requisites
