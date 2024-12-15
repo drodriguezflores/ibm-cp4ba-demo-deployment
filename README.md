@@ -59,8 +59,8 @@ Download the _Container Application Software for Enterprises (CASE)_ package.
 ```
 git clone -b 24.0.1 https://github.com/icp4a/cert-kubernetes.git
 ```
-### Preparing the operator and log file storage
-This part is based on https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/21.0.x?topic=hub-preparing-operator-log-file-storage.
+### Preparing image pull secrets
+This part is based on https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/24.0.1?topic=console-preparing-image-pull-secrets.
 
 Login to your OpenShift cluster.
 ```
@@ -170,7 +170,7 @@ oc adm policy add-scc-to-user privileged -z ibm-cp4ba-privileged -n ${NAMESPACE}
 oc adm policy add-scc-to-user anyuid -z ibm-cp4ba-anyuid -n ${NAMESPACE}
 ```
 ### Installing the IBM operator catalog
-This part is based on https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/21.0.x?topic=hub-installing-operator-catalog.
+This part is based on https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/24.0.1?topic=console-installing-cloud-pak-catalogs-operators.
 
 Add the CatalogSource resources to Operator Hub using yaml file below. The CatalogSource resources add the _IBM Operator Catalog_ to the OperatorHub, which depends on the catalog sources for _IBM Cloud Pak for Business Automation_ and _IBM Automation Foundation Services_.
 
