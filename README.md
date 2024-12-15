@@ -17,11 +17,9 @@ Please do not hesitate to create an issue here if needed. Your feedback is appre
 1) OpenShift cluster sized according with the system requirements: https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/24.0.1?topic=deployment-system-requirements.
 1) Software entitlement key available at https://myibm.ibm.com/products-services/containerlibrary
 1) Your own Red Hat (RHEL), CentOS, or macOS to run the installation scripts. The scripts will be communication with your OpenShift cluster using OpenShift CLI (oc), resp. kubectl. Detailed instructions are available at https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/24.0.1?topic=deployment-preparing-starter.
-
-![Nodes of the OpenShift cluster](images/cluster-nodes.png)
 ## Types of deployment and available capabilities
-Two types of CP4BA deployments are available - _Demo_ and _Enterprise_.
-### Demo deployment
+Two types of CP4BA deployments are available - _Starter_ and _Production_.
+### Starter deployment
 - Intended for demonstration and evaluation purposes. Not for production, not even for development.
 - Provides following set of CP4BA capabilities:
   - IBM Business Automation Workflow - Authoring
