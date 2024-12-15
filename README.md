@@ -30,13 +30,13 @@ Two types of CP4BA deployments are available - _Starter_ and _Production_.
   - IBM Business Automation Insights
   - IBM Business Automation Application
 - Contains embedded pre-requisites making installation easier:
-  - Uses bundled containerized DB2 database. No need to take care of creation of a database. All capabilities by default use the shared DB2 with no additional configuration effort.
-  - The same for LDAP used by CP4BA's User Management Service (UMS). It is implemented using OpenLDAP. phpLDAPadmin is also automatically installed and configured to make administration of users and groups easier if needed.
+  - Uses bundled containerized PostgreSQL database. No need to take care of creation of a database. All capabilities by default use the shared PostgreSQL with no additional configuration effort.
+  - The same for LDAP used by CP4BA's Identity Management Service (IM). It is implemented using OpenLDAP. phpLDAPadmin is also automatically installed and configured to make administration of users and groups easier if needed.
 - The pre-defined default services like OpenLDAP, phpLDAPadmin, BusyBox, Alpine etc. might have vulnerabilities and are not suitable for production.
-- Sets default credentials to make it easy to deploy, and for this reason you must not keep an Demo deployment for development or for production.
+- Sets default credentials to make it easy to deploy, and for this reason you must not keep an Starter deployment for development or for production.
 ### Enterprise deployment
 - Intended for project deployments from development to production.
-- Completely open to specific configurations depending on environment of the customer - databases, LDAP servers etc.
+- Completely open to specific configurations depending on environment of the customer - databases, LDAP servers, etc.
 - Requires more expertise and effort to install.
 
 Enterprise deployment is not a focus of this document.
