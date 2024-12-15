@@ -47,7 +47,7 @@ Enterprise deployment is not a focus of this document.
 ### Preparing for a demo deployment
 First you need to have an Red Hat (RHEL), CentOS, or macOS environment allowing you to run the scripts and communicate with the OpenShift cluster.
 
-Follow this link https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/21.0.x?topic=deployments-preparing-demo-deployment to install Kubernetes/OCP CLI and podman.
+Follow this link https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/24.0.1?topic=deployment-preparing-starter to install Kubernetes/OCP CLI and podman.
 
 Create a temporary directory with whatever name your prefer to keep your artifacts for installation. Let's call the directory _cp4ba-install_.
 ```
@@ -57,13 +57,7 @@ cd cp4ba-install
 
 Download the _Container Application Software for Enterprises (CASE)_ package.
 ```
-curl https://github.com/IBM/cloud-pak/raw/master/repo/case/ibm-cp-automation/3.1.2/ibm-cp-automation-3.1.2.tgz -kL -o ibm-cp-automation-3.1.2.tgz
-```
-Unpack the artifacts.
-```
-tar -xvzf ibm-cp-automation-3.1.2.tgz
-cd ibm-cp-automation/inventory/cp4aOperatorSdk/files/deploy/crs
-tar -xvzf cert-k8s-21.0.2.tar
+git clone -b 24.0.1 https://github.com/icp4a/cert-kubernetes.git
 ```
 ### Preparing the operator and log file storage
 This part is based on https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/21.0.x?topic=hub-preparing-operator-log-file-storage.
