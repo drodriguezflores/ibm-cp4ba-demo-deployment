@@ -20,6 +20,9 @@ Please do not hesitate to create an issue here if needed. Your feedback is appre
 ## Types of deployment and available capabilities
 Two types of CP4BA deployments are available - _Starter_ and _Production_.
 ### Starter deployment
+
+![IBM CP4BA Starter Capabilities](images/cp4ba-starter-capabilities.png)
+
 - Intended for demonstration and evaluation purposes. Not for production, not even for development.
 - Provides following set of CP4BA capabilities:
   - IBM Business Automation Workflow - Authoring
