@@ -14,11 +14,9 @@ Please do not hesitate to create an issue here if needed. Your feedback is appre
 
 > The installation should behave the same on managed OpenShift clusters like [ROSA (Red Hat OpenShift Service on AWS)](https://aws.amazon.com/rosa/) and [Azure Red Hat OpenShift](https://azure.microsoft.com/services/openshift). Detailed testing is being in progress, with positive results so far. The only major difference actually seems to be in storage classes used for persistent volume claims which provide file systems to store data. The storage classes are always specific for particular environment and vendor. The right selection of storage classes must be performed during the installation.
 ## Pre-requisites
-1) OpenShift cluster sized according with the system requirements: https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/21.0.x?topic=installation-system-requirements.
+1) OpenShift cluster sized according with the system requirements: https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/24.0.1?topic=deployment-system-requirements.
 1) Software entitlement key available at https://myibm.ibm.com/products-services/containerlibrary
-1) Your own Red Hat (RHEL), CentOS, or macOS to run the installation scripts. The scripts will be communication with your OpenShift cluster using OpenShift CLI (oc), resp. kubectl. Detailed instructions are available at https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/21.0.x?topic=deployments-preparing-demo-deployment.
-
-> The hardware requirements at the link above may look pretty large for demo deployment. In our case we are using OpenShift cluster with 5 nodes running in combined mode as both master and worker. Each with 16 CPU cores, 32 GB RAM and 24 GB disk space. All the resources are far from being heavily utilized. But - only the official system requirements should be respected.
+1) Your own Red Hat (RHEL), CentOS, or macOS to run the installation scripts. The scripts will be communication with your OpenShift cluster using OpenShift CLI (oc), resp. kubectl. Detailed instructions are available at https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/24.0.1?topic=deployment-preparing-starter.
 
 ![Nodes of the OpenShift cluster](images/cluster-nodes.png)
 ## Types of deployment and available capabilities
